@@ -31,6 +31,7 @@ const AddNews = () => {
       </div>
 
       <form onSubmit={handleSubmit} className="mx-auto mb-0 mt-8 w-full space-y-4 ">
+
         <div className="relative ">
           <input
             type="text"
@@ -39,6 +40,7 @@ const AddNews = () => {
             onChange={(e) => setHeadline(e.target.value)}
           />
         </div>
+
         <div>
           <div className="relative">
             <textarea
@@ -48,6 +50,7 @@ const AddNews = () => {
               onChange={(e) => setDescription(e.target.value)}
             />
           </div>
+
           <div className="relative">
             <input
               type="text"
@@ -56,6 +59,7 @@ const AddNews = () => {
               onChange={(e) => setLink(e.target.value)}
             />
           </div>
+          
           <div className="relative">
             <input
               type="text"
@@ -69,7 +73,7 @@ const AddNews = () => {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+            className="inline-block rounded-lg bg-black px-5 py-3 text-sm font-medium text-white"
           >
             Add News
           </button>
@@ -79,6 +83,4 @@ const AddNews = () => {
   )
 }
 
-export default AddNews
-
-// headline, description, link, img 
+export default AddNews;

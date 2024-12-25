@@ -53,7 +53,7 @@ const Navbar = () => {
                         to="/add-news"
                     >
                         <span
-                            className="absolute inset-y-0 right-0 w-[2px] bg-white transition-all group-hover:w-full group-active:bg-indigo-500"
+                            className="absolute inset-y-0 right-0 w-[2px] bg-white transition-all group-hover:w-full group-active:bg-black"
                         ></span>
 
                         <span
@@ -68,4 +68,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar
+export default Navbar;
