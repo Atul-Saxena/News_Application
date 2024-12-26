@@ -45,7 +45,7 @@ const AddNews = () => {
           <div className="relative">
             <textarea
               type="text"
-              className="w-full md:h-[300px] h-[200px] rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+              className="w-full md:h-[200px] h-[100px] rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
               placeholder="Enter description"
               onChange={(e) => setDescription(e.target.value)}
             />

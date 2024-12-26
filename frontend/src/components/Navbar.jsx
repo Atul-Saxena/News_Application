@@ -7,20 +7,19 @@ const Navbar = () => {
 
     const hyperlinks = [
         { name: 'Home', href: '/' },
-        { name: 'Add News', href: '#' },
     ]
 
 
     return (
-        <nav className="bg-gray-800 text-white p-4 shadow-md mb-6">
+        <nav className="bg-gray-800 text-white p-2 shadow-md mb-4">
             <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-xl font-bold">NewsApp</h1>
+                <h1 className="text-base font-bold">NewsApp</h1>
                 <button
                     className="sm:hidden text-white focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <svg
-                        className="w-6 h-6"
+                        className="w-4 h-4"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -35,7 +34,7 @@ const Navbar = () => {
                     </svg>
                 </button>
                 <ul
-                    className={`sm:flex sm:items-center sm:space-x-6 ${isOpen ? "block" : "hidden"
+                    className={`sm:flex sm:items-center sm:space-x-4 ${isOpen ? "block" : "hidden"
                         }`}
                 >
                     {
@@ -49,7 +48,7 @@ const Navbar = () => {
                     }
 
                     <Link
-                        className="group relative inline-block overflow-hidden border border-white px-8 py-3 focus:outline-none focus:ring"
+                        className="group relative inline-block overflow-hidden border border-white px-4 py-2 focus:outline-none focus:ring"
                         to="/add-news"
                     >
                         <span
