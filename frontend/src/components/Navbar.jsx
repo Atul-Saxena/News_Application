@@ -61,6 +61,26 @@ const Navbar = () => {
                             Add News
                         </span>
                     </Link>
+
+                    <button
+                        className="group relative inline-block overflow-hidden border border-white px-4 py-2 focus:outline-none focus:ring"
+                        onClick={() => {
+                            localStorage.removeItem("authenticated");
+                            localStorage.removeItem("token");
+                            localStorage.removeItem("userID");
+                            window.location.reload();
+                        }}
+                    >
+                        <span
+                            className="absolute inset-y-0 right-0 w-[2px] bg-white transition-all group-hover:w-full group-active:bg-black"
+                        ></span>
+
+                        <span
+                            className="relative text-sm font-medium text-white transition-colors group-hover:text-black"
+                        >
+                            Logout
+                        </span>
+                    </button>
                 </ul>
             </div>
         </nav>
