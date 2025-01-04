@@ -28,15 +28,29 @@ Follow the steps below to create a `.env` file for your backend and configure th
    - Save the `.env` file and close the editor.
 
 
-## Example `.env` File
-Here is an example of a completed `.env` file:
+   - Example `.env` File
+   Here is an example of a completed `.env` file:
 
-```env
-MONGO_URI=mongodb+srv://username:password@cluster0.mongodb.net/mydatabase?retryWrites=true&w=majority
-```
+   ```env
+   MONGO_URI=mongodb+srv://username:password@cluster0.mongodb.net/mydatabase?retryWrites=true&w=majority
+   ```
+
+5. **Run Backend**
+   - Open the terminal.
+     ```bash
+     cd backend
+     npm start
+     ```
+
+6. **Run Frontend**
+   - Open the terminal.
+     ```bash
+     cd frontend
+     npm run dev
+     ```
 
 ### Important Notes:
 - Never share your `.env` file or its contents publicly.
 - For production, consider using secure methods to manage environment variables, such as using a secret manager.
 
-By following these steps, your backend environment will be set up correctly!
+By following these steps, your application will be set up correctly!
